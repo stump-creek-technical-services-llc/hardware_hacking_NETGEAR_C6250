@@ -1,0 +1,302 @@
+BCM384338 0002A080 memsysad800x16 2p5bld1
+
+SHMOO VER 1.17
+MCB
+
+PKID 20131007  050B6000  050B0000  04B4103E  00001C00
+
+S3000020B
+000014A0
++00000004  >0000014A
+t00000027  0000003C
+@000000B4  ^00000021
+
+RDEN W0 00000026  00000004  00000000
+
+
+RDLY W0 00000003
+
+RDQS W0
+
+    0000000000111111111122222222223333333333444444444455555555556666
+    0123456789012345678901234567890123456789012345678901234567890123
+ 00 ---------+++++++++++++++++++++++++X++++++++++++++++++++++++-----
+ 01 ---++++++++++++++++++++++++++X+++++++++++++++++++++++++---------
+ 02 -----------++++++++++++++++++++++++++X+++++++++++++++++++++++++-
+ 03 --------+++++++++++++++++++++++++X+++++++++++++++++++++++++-----
+ 04 --++++++++++++++++++++++++++X++++++++++++++++++++++++++---------
+ 05 ----+++++++++++++++++++++++++++X++++++++++++++++++++++++++------
+ 06 ---++++++++++++++++++++++++++X+++++++++++++++++++++++++---------
+ 07 ----------+++++++++++++++++++++++++X+++++++++++++++++++++++++---
+ 08 --+++++++++++++++++++++++++X+++++++++++++++++++++++++-----------
+ 09 --------+++++++++++++++++++++++++X+++++++++++++++++++++++++-----
+ 10 --------++++++++++++++++++++++++X++++++++++++++++++++++++-------
+ 11 ------+++++++++++++++++++++++++X++++++++++++++++++++++++--------
+ 12 ----++-+++++++++++++++++++++++++X+++++++++++++++++++++++++------
+ 13 -----++++++++++++++++++++++++++X++++++++++++++++++++++++++------
+ 14 -----+++++++++++++++++++++++++X++++++++++++++++++++++++---------
+ 15 ----------+++++++++++++++++++++++++X++++++++++++++++++++++++----
+
+
+P\0\0\0 W0
+
+    0000000000111111111122222222223333333333444444444455555555556666
+    0123456789012345678901234567890123456789012345678901234567890123
+ 00 -------+-+++++++++++++++++++++++++X+++++++++++++++++++++++++----
+ 01 ---++-+++++++++++++++++++++++++X++++++++++++++++++++++++--------
+ 02 -----------++++++++++++++++++++++++++X+++++++++++++++++++++++++-
+ 03 --------+-+++++++++++++++++++++++++X++++++++++++++++++++++++----
+ 04 ---++++++++++++++++++++++++++X+++++++++++++++++++++++++---------
+ 05 -----+++++++++++++++++++++++++++X++++++++++++++++++++++++++-----
+ 06 --+--+++++++++++++++++++++++++X++++++++++++++++++++++++---------
+ 07 ----------+++++++++++++++++++++++++++X+++++++++++++++++++++++++-
+ 08 ---+++++++++++++++++++++++++X+++++++++++++++++++++++++----------
+ 09 ----------+++++++++++++++++++++++++X++++++++++++++++++++++++----
+ 10 ---------+++++++++++++++++++++++++X++++++++++++++++++++++++-----
+ 11 -----+++++++++++++++++++++++++++X++++++++++++++++++++++++++-----
+ 12 ------++++++++++++++++++++++++++X++++++++++++++++++++++++++-----
+ 13 ---+---+++++++++++++++++++++++++X+++++++++++++++++++++++++------
+ 14 ---++++++++++++++++++++++++++X++++++++++++++++++++++++++--------
+ 15 -----------++++++++++++++++++++++++++X++++++++++++++++++++++++--
+
+
+N\0\0\0 W0
+
+    0000000000111111111122222222223333333333444444444455555555556666
+    0123456789012345678901234567890123456789012345678901234567890123
+ 00 -------++++++++++++++++++++++++++X+++++++++++++++++++++++++-----
+ 01 -+-++++++++++++++++++++++++++X+++++++++++++++++++++++++---------
+ 02 --------++++++++++++++++++++++++++++X++++++++++++++++++++++++++-
+ 03 -------++++++++++++++++++++++++++X+++++++++++++++++++++++++-----
+ 04 --++++++++++++++++++++++++++X++++++++++++++++++++++++++---------
+ 05 ---++++++++++++++++++++++++++++X+++++++++++++++++++++++++++-----
+ 06 --+++++++++++++++++++++++++++X++++++++++++++++++++++++++--------
+ 07 -------+++++++++++++++++++++++++++X++++++++++++++++++++++++++---
+ 08 -++++++++++++++++++++++++++X+++++++++++++++++++++++++-----------
+ 09 -----+-++++++++++++++++++++++++++X+++++++++++++++++++++++++-----
+ 10 ------+++++++++++++++++++++++++X+++++++++++++++++++++++++-------
+ 11 ----++++++++++++++++++++++++++X+++++++++++++++++++++++++--------
+ 12 ----+++++++++++++++++++++++++++X++++++++++++++++++++++++++------
+ 13 ---+++++++++++++++++++++++++++X+++++++++++++++++++++++++++------
+ 14 --++++++++++++++++++++++++++X++++++++++++++++++++++++++---------
+ 15 ------+++++++++++++++++++++++++++X++++++++++++++++++++++++++----
+
+
+WRDQ W0
+
+    0000000000111111111122222222223333333333444444444455555555556666
+    0123456789012345678901234567890123456789012345678901234567890123
+ 00 ++++++++++++++++++++++++X+++++++++++++++++++++++------------++++
+ 01 +++++++++++++++++++++X+++++++++++++++++++++-----------------++++
+ 02 ++++++++++++++++++++++++X++++++++++++++++++++++++-------------++
+ 03 ++++++++++++++++++++++++X+++++++++++++++++++++++------------++++
+ 04 +++++++++++++++++++++X+++++++++++++++++++++------------------+++
+ 05 +++++++++++++++++++++++X++++++++++++++++++++++---------------+++
+ 06 +++++++++++++++++++++X+++++++++++++++++++++-----------------++++
+ 07 ++++++++++++++++++++++++X++++++++++++++++++++++++------------+++
+ 08 ++++++++++++++++++++++X++++++++++++++++++++++---------------++++
+ 09 ++++++++++++++++++++++++X++++++++++++++++++++++++-------------++
+ 10 ++++++++++++++++++++++++X++++++++++++++++++++++++--------------+
+ 11 +++++++++++++++++++++++X+++++++++++++++++++++++-------------++++
+ 12 +++++++++++++++++++++++++X++++++++++++++++++++++++------------++
+ 13 ++++++++++++++++++++++++X+++++++++++++++++++++++------------++++
+ 14 +++++++++++++++++++++++X+++++++++++++++++++++++--------------+++
+ 15 ++++++++++++++++++++++++X++++++++++++++++++++++++-------------+-
+
+
+WRDM W0 00000016
+WRDM W0 00000017
+
+
+ADDR
+
+    0000000000111111111122222222223333333333444444444455555555556666
+    0123456789012345678901234567890123456789012345678901234567890123
+ 00 +++++++++++++++++++++++++++++++X+++S++++++++++++++++++++++++++++
+
+
+Sync: 0
+MemSize:            256 M
+Chip ID:     BCM3843G-B0
+
+BootLoader Version: 2.5.0beta1 nick spiboot dual-flash nandflash avs linux
+Build Date: Nov 17 2014
+Build Time: 14:47:22
+SPI flash ID 0xc22013, size 0MB, block size 64KB, write buffer 256, flags 0x0
+StrapBus address b4e00194, value ff7dfffe
+NAND flash: Device size 128 MB, Block size 128 KB, Page size 2048 B
+Cust key size 128
+
+Signature/PID: c326
+
+Reading flash map at ff30, size 192
+Reading from SPI flash at 0xff30
+Successfully restored flash map from SPI flash!
+NandFlashRead: Reading offset 0x0, length 0x5c
+
+Image 1 Program Header:
+   Signature: c326
+     Control: 0005
+   Major Rev: 0003
+   Minor Rev: 0000
+  Build Time: 2020/5/14 08:48:36 Z
+ File Length: 4479465 bytes
+Load Address: 80004000
+    Filename: C6250-100NAS_V1.02.02u_sto.bin
+         HCS: 0961
+         CRC: 279731ec
+
+Found image 1 at offset 80000
+NandFlashRead: Reading offset 0x1000000, length 0x5c
+NandFlashRead: Reading offset 0x2000000, length 0x5c
+
+WARNING: Signatures do not match!  This may be a bad image!
+Image sig = 3384, PID = c326
+
+Image 3 Program Header:
+   Signature: 3384
+     Control: 0005
+   Major Rev: 0002
+   Minor Rev: 0017
+  Build Time: 2019/1/9 02:54:47 Z
+ File Length: 1965988 bytes
+Load Address: 00000000
+    Filename: bcm93384_kernel
+         HCS: 68f3
+         CRC: e2963ffd
+
+WARNING: Signatures do not match!  This may be a bad image!
+Image sig = 3384, PID = c326
+
+Found image 3 at offset 2080000
+
+Enter '1', '2', or 'p' within 2 seconds or take default...
+. .
+
+NandFlashRead: Reading offset 0x2000000, length 0x200
+NandFlashRead: Reading offset 0x2000200, length 0x1dfe00
+Performing CRC on Image 3...
+CRC time = 39238169
+Detected LZMA compressed image... decompressing...
+Target Address: 0x88000000
+decompressSpace is 0x8000000
+Elapsed time 1756954630
+Decompressed length: 8457325
+Done Copying Root File System...
+
+NandFlashRead: Reading offset 0x0, length 0x200
+NandFlashRead: Reading offset 0x200, length 0x445845
+Performing CRC on Image 1...
+CRC time = 153337477
+Detected LZMA compressed image... decompressing...
+Target Address: 0x80004000
+decompressSpace is 0x8000000
+Elapsed time 4052590040
+Decompressed length: 19555040
+Copying partition table to 0x83fffc04 180
+Copying partition table to 0x80000904 180
+
+Executing Image 1...
+
+
+ eCos - hal_diag_init
+Init device '/dev/SerialConsoleDriv'
+Init device '/dev/BrcmTelnetIoDriver'
+Init device '/dev/ttydiag'
+Init tty channel: 812a9d30
+Init device '/dev/tty0'
+Init tty channel: 812a9d50
+Init device '/dev/haldiag'
+HAL/diag SERIAL init
+Init device '/dev/ser0'
+BCM 33XX SERIAL init - dev: b4e00500.1
+Set output buffer - buf: 0x8145cce0 len: 4096
+Set input buffer - buf: 0x8145dce0 len: 4096
+BCM 33XX SERIAL config
+"\xB9\xA5\xD1\x81device '/dev/ser1'
+BCM 33XX SERIAL init - dev: b4e00520.2
+Set output buffer - buf: 0x8145ece0 len: 4096
+Set input buffer - buf: 0x8145fce0 len: 4096
+BCM 33XX SERIAL config
+
+Init device '/dev/ser2'
+InitBoard: MIPS frequency 637600000
+InitBoard: Switching APM Clock to SYSPLL.
+ApmClockSelect ClockSource = 0
+  No HVG, nothing to do.
+InitBoard: Setting LCPLL to 2.6GHz.
+InitBoard: Updated LC PLL Lock status: OK
+[00:00:00 01/01/1970] [tStartup] BcmBfcStdEmbeddedTarget::InitStorageDrivers:  (BFC Target) Configuring/Loading Flash driver...
+[00:00:00 01/01/1970] [tStartup] BcmSpiFlashDevice::DetectFlash:  (SPI Flash Device Factory) WARNING - Detected SPI flash with JEDEC ID =0xc22013
+Waited 3 iterations after device ID read
+NAND flash: Device size 128 MB, Block size 128 KB, Page size 2048 B
+[00:00:00 01/01/1970] [tStartup] BcmNandFlashDevice::DetectNandFlash:  (NAND Flash Device Factory) WARNING - Detected NAND flash with JEDEC ID =0xeff10095
+Found bootloader flash map at 0x80000904.
+[00:00:00 01/01/1970] [tStartup] FlashDeviceDriver::SpiFlashPlaceRegions:  (Flash Driver C API) WARNING - Partition falls out of range of device 0. Placing in device 1...
+[00:00:00 01/01/1970] [tStartup] FlashDeviceDriver::SpiFlashPlaceRegions:  (Flash Driver C API) WARNING - Partition falls out of range of device 0. Placing in device 1...
+[00:00:00 01/01/1970] [tStartup] FlashDeviceDriver::SpiFlashPlaceRegions:  (Flash Driver C API) WARNING - Partition falls out of range of device 0. Placing in device 1...
+[00:00:00 01/01/1970] [tStartup] FlashDeviceDriver::SpiFlashPlaceRegions:  (Flash Driver C API) WARNING - Partition falls out of range of device 0. Placing in device 1...
+[00:00:00 01/01/1970] [tStartup] FlashDeviceDriver::SpiFlashPlaceRegions:  (Flash Driver C API) WARNING - Partition falls out of range of device 0. Placing in device 1...
+[00:00:00 01/01/1970] [tStartup] BcmBfcStdEmbeddedTarget::InitStorageDrivers:  (BFC Target) Loading BootloaderStore driver...
+[00:00:00 01/01/1970] [tStartup] BcmBfcStdEmbeddedTarget::InitStorageDrivers:  (BFC Target) Loading ProgramStore driver...
+ProgramStoreDeviceDriver::ProgramStoreDriverInit:  INFO - Initializing...
+[00:00:00 01/01/1970] [tStartup] BcmBfcStdEmbeddedTarget::InitStorageDrivers:  (BFC Target) Loading NonVol driver...
+[00:00:00 01/01/1970] [tStartup] BcmBfcStdEmbeddedTarget::InitStorageDrivers:  (BFC Target) Storage drivers initialized successfully.
+FxFileStoreDeviceDriver::FxFileStoreDriverInit:  INFO - Initializing...
+[00:00:00 01/01/1970] [tStartup] BcmBfcStdEmbeddedTarget::InitDeviceAbstractions:  (BFC Target) Creating singletons for ProgramStore/BootloaderStore/NonVol devices...
+Detecting the next image number that we will store to by default...
+Bootloader indicates we are running image 1
+By default, we will dload to image number 2!
+
+[00:00:00 01/01/1970] [tStartup] BcmBfcStdEmbeddedTarget::InitDeviceAbstractions:  (BFC Target) Device abstraction singletons created successfully.
+
+BcmeRouterNonVolSettings::GetSingletonInstance:  WARNING - the singleton instance is NULL, and someone is accessing it!
+BcmeRouterNonVolSettings::GetSingletonInstance:  WARNING - the singleton instance is NULL, and someone is accessing it!
+BcmeRouterNonVolSettings::GetSingletonInstance:  WARNING - the singleton instance is NULL, and someone is accessing it!
+BcmeRouterNonVolSettings::GetSingletonInstance:  WARNING - the singleton instance is NULL, and someone is accessing it!
+AVS Thread Constructor....
+PMC AVS Thread Constructor....
+LoadPMCCode:
+    codesize  = 10720
+    allocated = 32768
+    buffAddr  = 0x87ec5cb8
+    alignMask = 0xffffc000
+    codeAddr  = 0x87ec8000
+PMC AVS Thread:: Releasing B0 run-time code...
+    waiting on pmc to accept or reject image
+    PMC indicates run_state = 7 (Running)
+    AVS is disabled (state = 1)
+Scratch register = 0x1000002
+Generate WPS PIN = 11255253
+BcmFxWiFi80211NonVolSettings::GetInstance(0):  WARNING - the instance pointer is NULL, and someone is accessing it!
+Generate WPS PIN = 11255253
+BcmFxWiFi80211NonVolSettings::GetInstance(0):  WARNING - the instance pointer is NULL, and someone is accessing it!
+Generate WPS PIN = 11255253
+BcmFxWiFi80211NonVolSettings::GetInstance(1):  WARNING - the instance pointer is NULL, and someone is accessing it!
+Generate WPS PIN = 11255253
+BcmFxWiFi80211NonVolSettings::GetInstance(1):  WARNING - the instance pointer is NULL, and someone is accessing it!
+BcmPcpClientServiceAppIf::GetSingletonInstance:  WARNING - the singleton is NULL, and someone is accessing it!
+
+Reading Permanent settings from non-vol...
+Checksum for permanent settings:  0xef1892fb
+Setting downstream calibration signature to '5.5.10mp4|die temperature:27.969degC\0\0\0\0\0'
+Setting downstream calibration signature to '5.5.10mp4|die temperature:27.969degC\0\0\0\0\0'
+[00:00:00 01/01/1970] [tStartup] FxUserServiceNonVolSettings::ReadFromImpl:  (Fx User Service NonVol Settings) WARNING - Read older version of the settings (0.1); they have been upgraded to version 0.2, preserving original settings.
+
+*
+*
+* One or more of the settings groups was upgraded.
+*
+*
+Settings were read and verified.
+
+
+Reading Dynamic settings from non-vol...
+Checksum for dynamic settings:  0x16a6b0e3
+Settings were read and verified.
+
+Console input has been disabled in non-vol.
+Console output has been disabled in non-vol!  Goodbye...
+Creating SNMP agent cablemodem agent
+[00:00:00 01/01/1970] [Reset/Standby Switch Thread] BcmResetStandbySwitchThread::ProcessResetSwitchEvent:  (Reset/Standby Switch Thread) Reset switch released; resetting...
+[00:00:00 01/01/1970] [Reset/Standby Switch Thread] BcmResetStandbySwitchThread::ProcessResetSwitchEvent:  (Reset/Standby Switch Thread) Cant Reset pfCmDocsisCtlThread==NULL...

@@ -135,6 +135,12 @@ K4B2G16
 MX25L4006E
 ```
 
+Identified in firmware:
+
+> [00:00:00 01/01/1970] [tStartup] BcmSpiFlashDevice::DetectFlash:  (SPI Flash Device Factory) WARNING - Detected SPI flash with JEDEC ID =0xc22013
+Waited 3 iterations after device ID read
+
+
 ### U370 Winbond W29N01HVSINA 1 Gib Parallel NAND Flash
 
 ![photo](photos/chip_U370_Winbond_W29N01HVSINA.jpg)
@@ -147,6 +153,12 @@ MX25L4006E
 ```text
 W29N01HVSINA
 ```
+
+Identified in firmware:
+
+> NAND flash: Device size 128 MB, Block size 128 KB, Page size 2048 B
+[00:00:00 01/01/1970] [tStartup] BcmNandFlashDevice::DetectNandFlash:  (NAND Flash Device Factory) WARNING - Detected NAND flash with JEDEC ID =0xeff10095
+
 
 ### U1189, U1190, U1195 Skyworks SKY85712-21 5 GHz Front-End Module
 
@@ -174,6 +186,12 @@ FMF
 ```text
 BCM4360KMLG
 ```
+
+Apparently, this SoC has two cores:
+a "Viper" BMIPS4355 core, which handles the modem operations and runs eCos.
+Then there's a "Zephyr" BMIPS5000 application processor.
+It would run things like the web UI, any NAS features, etc.
+
 
 ### U1194 Broadcom BCM43217 MIPS32 802.11n SoC
 
@@ -237,17 +255,120 @@ BCM54612E
 
 ![conn_J1.jpg](photos/conn_J1.jpg)
 
-This one is closer to the QAMLink chip.
+There's no clear index, so I'm going to say that the pin closest to the label `J1` is pin 1.
+
+| Pin | Signal |
+|-----|--------|
+| 1   | +3.3V  |
+| 2   | GND    |
+| 3   | TX     |
+| 4   | RX     |
+
+The UART parameters appear to be 115200,N,8,1.
+
+The output on this port stopped after about 14 seconds.
+
+[J1 boot transcript](log/boot_J1.log)
+
+> SHMOO VER 1.17
+
+Something about calibrating the DRAM, I guess.
+
+> Chip ID:     BCM3843G-B0
+
+This port appears to be connected to the QAMLink console.
+
+> BootLoader Version: 2.5.0beta1 nick spiboot dual-flash nandflash avs linux
+
+Might be able to dump the flash from the bootloader.
+
+> Executing Image 1...
+>
+>
+> eCos - hal_diag_init
+
+eCos, as expected.
+
+> BCM 33XX SERIAL init - dev: b4e00500.1
+
+Serial port 1, probably this one.
+
+> BCM 33XX SERIAL init - dev: b4e00520.2
+
+Serial port 2, probably J2.
+
+Apparently, this serial port is under control of the eCos system on the Viper core.
 
 ### J2 UART
 
 ![conn_J2.jpg](photos/conn_J2.jpg)
 
-This one is closer to the BCM4360 SoC.
+There's no clear index, so I'm going to say that the pin on the right in the photo is pin 1.
+
+| Pin | Signal |
+|-----|--------|
+| 1   | +3.3V  |
+| 2   | GND    |
+| 3   | TX     |
+| 4   | RX     |
+
+The UART parameters appear to be 115200,N,8,1.
+
+The output on this port started after 16.68 seconds.
+
+[J2 boot transcript](log/boot_J2.log)
+
+> [    0.000000] Linux version 2.6.30-1.0.10mp4 (justin@CPE-TC-Build3) (gcc version 4.4.2 (Buildroot 2010.02-git) ) #1 SMP Wed Jan 9 10:41:44 CST 2019
+
+It seems that J2 is the second serial port.
+It looks like this serial port outputs the Linux system log.
+
+> [    0.000000] Chip ID: BCM3843G-B0 800MHZ
+
+Apparently, this serial port is under control of the Linux system on the Zephyr core.
 
 ## Firmware
 
-It probably uses eCos like the BCM3833 chips,
-but I don't feel like pursuing it right now.
+I've never seen two completely different OSes running natively on different cores.
 
-## Conclusion: ?
+It looks like I'm able to dump the flash over console from the bootloader.
+I interrupted it with 'p', as prompted.
+
+```text
+Name           Offset        Size    Index
+==========================================
+bootloader   0x00000000   0x00010000   0
+permnv       0x00010000   0x00020000   5
+dynnv        0x00040000   0x00040000   7
+image1       0x00080000   0x01000000   1
+image2       0x01080000   0x01000000   2
+linux        0x02080000   0x02000000   3
+linuxapps    0x04080000   0x02000000   4
+linuxkfs     0x06080000   0x02000000   8
+bootloader   0x00000000   0x00010000   0
+```
+
+Apparently these are all based on 0x8000_0000.
+
+to dump:
+```text
+r0x80000000
+```
+
+It only dumps four bytes at a time, which is not very practical.
+
+Here's the log:
+[rom_dump_failure.log](log/rom_dump_failure.log)
+
+## Conclusion: Hackable, but difficult
+
+It looks like the manufacturer went to some lengths to keep me from hacking this device.
+I don't have the time to dig further into it,
+but the next steps would be to dump the NAND flash chip.
+I'd do it by compiling a small bit of native code that reads the ROM via the NAND controller on the BCM33843,
+and dumps it directly to the serial port.
+
+The dumper program could be loaded and run via the `cmboot` menu.
+
+I could also dump the SPI NOR flash.
+--

@@ -1,0 +1,33 @@
+
+[    0.000000] Linux version 2.6.30-1.0.10mp4 (justin@CPE-TC-Build3) (gcc version 4.4.2 (Buildroot 2010.02-git) ) #1 SMP Wed Jan 9 10:41:44 CST 2019
+[    0.000000] console [early0] enabled
+[    0.000000] CPU revision is: 00025a11 (Broadcom BMIPS5000)
+[    0.000000] FPU revision is: 00130001
+[    0.000000] Added NON Linux Memory Region 08000000 - 0c000000 ubus 00000000
+[    0.000000] Added NON Linux Memory Region 0c000000 - 0e000000 ubus 04000000
+[    0.000000] Added NON Linux Memory Region 0e000000 - 0f000000 ubus 06000000
+[    0.000000] Added NON Linux Memory Region 0f000000 - 10000000 ubus 07000000
+[    0.000000] Added Linux Memory Region 00000000 - 08000000 ubus 08000000
+[    0.000000] ddr_mem_size: 10000000
+[    0.000000] Determined physical RAM map:
+[    0.000000]  memory: 08000000 @ 08000000 (reserved)
+[    0.000000]  memory: 08000000 @ 00000000 (usable)
+[    0.000000] Zone PFN ranges:
+[    0.000000]   DMA      0x00000000 -> 0x00001000
+[    0.000000]   Normal   0x00001000 -> 0x00008000
+[    0.000000]   HighMem  0x00008000 -> 0x00008000
+[    0.000000] Movable zone start PFN for each node
+[    0.000000] early_node_map[1] active PFN ranges
+[    0.000000]     0: 0x00000000 -> 0x00010000
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 32512
+[    0.000000] Kernel command line: ubi.mtd=linuxkfs root=ubi0:rootfs ro noinitrd rootfstype=ubifs console=ttyS0,115200 nofxuart
+[    0.000000] Primary instruction cache 32kB, VIPT, 4-way, linesize 64 bytes.
+[    0.000000] Primary data cache 32kB, 4-way, VIPT, cache aliases, linesize 32 bytes
+[    0.000000] MIPS secondary cache 256kB, 8-way, linesize 128 bytes.
+[    0.000000] RCU-based detection of stalled CPUs is enabled.
+[    0.000000] NR_IRQS:256
+[    0.000000] Broadcom CHIP ID: 38430038
+[    0.000000] PID hash table entries: 512 (order: 9, 2048 bytes)
+[    0.000000] Chip ID: BCM3843G-B0 800MHZ
+[  \xDC\x05\x02\x02\x02\x82r\x82\x82\x82\x82\x82\x82\xEA\x81console handover: boot [early0] -> real [ttyS0]
+
