@@ -371,4 +371,3 @@ and dumps it directly to the serial port.
 The dumper program could be loaded and run via the `cmboot` menu.
 
 I could also dump the SPI NOR flash.
---
